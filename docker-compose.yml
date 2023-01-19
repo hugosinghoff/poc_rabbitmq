@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  rabbitmq:
+    image: docker.io/bitnami/rabbitmq:3.11
+    container_name: 'rabbitmq-poc'
+    ports:
+      - '4369:4369'
+      - '5551:5551'
+      - '5552:5552'
+      - '8050:5672'
+      - '25672:25672'
+      - '8051:15672'
+#    volumes:
+#      - ${RABBITMQ_VOLUMES}/config:/config/
+#      - ${RABBITMQ_VOLUMES}/data:/var/lib/rabbitmq/
+#    environment:
+#      - RABBITMQ_CONFIG_FILE=/config/rabbitmq_custom
+#      - TZ=Europe/Paris
