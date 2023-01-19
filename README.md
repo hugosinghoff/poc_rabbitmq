@@ -1,4 +1,9 @@
 # POC Rabbitmq
+
+## Install
+
+`pip install pika`
+
 ## Docker image used
 
 `https://hub.docker.com/r/bitnami/rabbitmq`
