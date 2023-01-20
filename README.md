@@ -19,10 +19,18 @@ This POC used the python language and an WSL2(ubuntu) environement, others langu
 `id : user`
 `password : bitnami`
 
-# Config and data
+## Config and data
 
 You can configure the data and config with the docker-compose file.
 You might have to give rights to the folders :
 
 `sudo chown -R 1001:1001 $RABBITMQ_VOLUMES`
 with `export RABBITMQ_VOLUMES="~/poc_rabbitmq"`
+
+## Start the app
+
+`docker-compose up -d`
+
+To launch consumer or publisher :
+
+`python ./consume.py` or `python ./publish.py`
